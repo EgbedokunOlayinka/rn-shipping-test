@@ -82,13 +82,13 @@ const DetailsView = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: spacing.xl
+    marginTop: spacing.lg
   },
   title: {
     fontSize: 20
   },
   bodyWrapper: {
-    marginTop: spacing.sm2
+    marginTop: spacing.sm
   },
   box: {
     borderWidth: 1,

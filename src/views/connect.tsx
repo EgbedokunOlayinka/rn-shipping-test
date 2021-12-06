@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { View, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { colors, sizes, spacing } from '../utils/theme';
 import Icon from 'react-native-vector-icons/Ionicons';
 import EntIcon from 'react-native-vector-icons/Entypo';
@@ -62,7 +62,7 @@ const Connect = () => {
                 onPress={() => console.log('done')}
               >
                 <Icon name='call' size={18} color='white' />
-                <_Text variant='SemiBold' style={{ marginLeft: spacing.sm }}>Connect</_Text>
+                <_Text variant='SemiBold' style={{ marginLeft: spacing.sm, color: 'white' }}>Connect</_Text>
               </Btn>
             </View>
           </View>
@@ -74,8 +74,8 @@ const Connect = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
+    marginHorizontal: spacing.md,
+    marginVertical: spacing.sm,
     flex: 1
   },
   header: {
@@ -94,12 +94,12 @@ const styles = StyleSheet.create({
     flex: 1
   },
   mapView: {
-    flex: 0.8,
-    marginVertical: spacing.lg,
+    flex: 0.65,
+    marginVertical: spacing.sm2,
     borderRadius: 15
   },
   textView: {
-    flex: 0.2
+    flex: 0.35
   },
   leftTextView: {
 
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     borderRadius: 8
   },
   btnView: {
-    flex: 0.8,
+    flex: 0.7,
     paddingLeft: spacing.xl3
   },
   bigText: {
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
   detailsFlex: {
     flexDirection: 'row',
     alignItems: 'center',
-    flex: 0.2
+    flex: 0.3
   },
   detailsText: {
     marginLeft: spacing.sm,

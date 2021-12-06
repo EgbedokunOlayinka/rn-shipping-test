@@ -21,9 +21,10 @@ const ItemInfoBtn = ({ text }: IItemInfoBtnProps) => {
     <TouchableOpacity
       style={{
         borderRadius: 15,
-        width: 110,
+        minWidth: 100,
         paddingVertical: spacing.sm,
         backgroundColor: selected ? colors.blue : colors.grey,
+        marginTop: spacing.sm
       }}
       onPress={() => dispatch(setItemInfo(text))}
     >

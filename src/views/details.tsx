@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { colors, spacing } from '../utils/theme';
 import Icon from 'react-native-vector-icons/Ionicons';
 import _Text from '../components/_Text';
@@ -33,7 +33,7 @@ const Details = () => {
   }
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.header}>
         <TouchableOpacity style={styles.headerLeftBtn}>
           <Icon name='reorder-two-outline' size={40} color='black' />
@@ -96,14 +96,14 @@ const Details = () => {
           onPress={() => navToConnect()}
         />
       </View>
-    </View>
+    </ScrollView>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
+    marginHorizontal: spacing.md,
+    marginVertical: spacing.sm,
     flex: 1
   },
   header: {
@@ -128,12 +128,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   btnView: {
-    marginTop: spacing.xl,
+    marginTop: spacing.md,
     display: 'flex',
     alignItems: 'center'
   },
   topBtnWrapper: {
-    marginTop: spacing.lg,
+    marginTop: spacing.sm,
     flexDirection: 'row'
   },
   topBtnLeft: {
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: spacing.xl
+    marginTop: spacing.lg
   },
   priceBold: {
     fontSize: 20

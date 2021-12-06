@@ -19,6 +19,7 @@ const Home = () => {
         <Image
           style={styles.image}
           source={require('../../assets/images/rn-test.png')}
+          resizeMode='contain'
         />
       </View>
       <View style={styles.bottomView}>
@@ -47,16 +48,18 @@ const Home = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
-    flex: 1
+    paddingHorizontal: spacing.sm2,
+    paddingVertical: spacing.sm,
+    flex: 1,
+    maxHeight: '100%'
   },
   topView: {
-    flex: 0.55
+    flex: 0.5,
+    // padding: 32
   },
   bottomView: {
-    flex: 0.45,
-    marginTop: spacing.xl,
+    flex: 0.5,
+    marginTop: spacing.sm2,
     paddingHorizontal: spacing.xs
   },
   image: {
@@ -65,12 +68,12 @@ const styles = StyleSheet.create({
   },
   titleText: {
     textAlign: 'center',
-    fontSize: sizes.xl3,
+    fontSize: sizes.xl,
   },
   bodyText: {
     textAlign: 'center',
     fontSize: sizes.md,
-    marginTop: spacing.md
+    marginTop: spacing.sm
   },
   flexView: {
     paddingHorizontal: spacing.sm,
@@ -78,7 +81,7 @@ const styles = StyleSheet.create({
     marginTop: spacing.md,
   },
   btnView: {
-    marginTop: spacing.xl2,
+    marginTop: spacing.md,
     display: 'flex',
     alignItems: 'center'
   }

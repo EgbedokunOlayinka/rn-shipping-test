@@ -53,13 +53,13 @@ const Pickup = () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: spacing.xl
+    marginTop: spacing.lg
   },
   title: {
     fontSize: 20
   },
   bodyWrapper: {
-    marginTop: spacing.sm2,
+    marginTop: spacing.sm,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center'
